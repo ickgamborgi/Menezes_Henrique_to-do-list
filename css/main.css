@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     color: rgb(0, 0, 0);
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
  }
  
  main {
@@ -25,16 +25,6 @@ body {
  h3 {
     margin: 0;
  }
-
- 
-/* 
-Header
-*/
-
-#header {
-    background-color: red;
-    margin-top: 0;
-}
 
  /* 
  All Sections 
@@ -82,7 +72,7 @@ input:hover {
     background-color: rgba(128, 128, 128, 0.25);
     padding: 5px 10px;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 10px;
 }
 
@@ -109,6 +99,7 @@ section ul li p {
 
 input[type="checkbox"]:checked + span {
     text-decoration: line-through;
+    background-color: rgb(3, 70, 14, .25);
 }
 
 input[type="checkbox"]:checked ~ span::after {
@@ -118,7 +109,87 @@ input[type="checkbox"]:checked ~ span::after {
     height: 5px;
     margin-top: -10px;
     margin-left: 10px;
+    color: white;
 }
+
+/* 
+Header
+*/
+
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+#header-title {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: 'Caveat', sans-serif;
+    font-size: 28px;
+    gap: 25px;
+}
+
+#header-title h2 {
+    background-color: #2d2d7a89;
+    border-radius: 15px;
+    padding: 5px 15px 5px 10px;
+    margin-bottom: 0px;
+}
+
+#header-title img {
+    width: 50px;
+    padding-top: 5px;
+}
+
+#header-text {
+    text-align: center;
+    max-width: 400px;
+    font-size: 13px;
+    opacity: .5;
+}
+
+/* 
+Footer
+ */
+
+ #footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+ }
+
+ #footer img {
+    width: 50px;
+ }
+
+ #footer h2 {
+    background-color: #2d2d7a89;
+    border-radius: 15px;
+    font-weight: 600;
+    padding: 5px 15px 5px 10px;
+    margin-bottom: 0px;
+ }
+
+ #footer p {
+    text-align: center;
+    margin-top: 25px;
+    max-width: 400px;
+    font-size: 13px;
+    opacity: .5;
+ }
 
  /* 
  To-Do List
@@ -137,6 +208,7 @@ input[type="checkbox"]:checked ~ span::after {
     color: white;
     margin: 0px;
     padding: 5px 15px;
+    font-family: 'Caveat', sans-serif;
     font-size: 26px;
     text-transform: uppercase;
     border-radius: 10px;
@@ -146,6 +218,7 @@ input[type="checkbox"]:checked ~ span::after {
     color: rgb(8, 0,98, 0.5);
     margin-top: 10px;
     margin-left: 10px;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -185,6 +258,7 @@ In Progress List
    color: white;
    margin: 0px;
    padding: 5px 15px;
+   font-family: 'Caveat', sans-serif;
    font-size: 26px;
    text-transform: uppercase;
    border-radius: 10px;
@@ -193,6 +267,7 @@ In Progress List
 #list-subtitle-inprogress {
    color: rgb(142, 12, 0, 0.5);
    margin-top: 10px;
+   font-weight: 400;
    margin-left: 10px;
    font-size: 18px;
 }
@@ -231,6 +306,7 @@ Done List
    color: white;
    margin: 0px;
    padding: 5px 15px;
+   font-family: 'Caveat', sans-serif;
    font-size: 26px;
    text-transform: uppercase;
    border-radius: 10px;
@@ -240,6 +316,7 @@ Done List
    color: rgb(3, 70, 14,0.5);
    margin-top: 10px;
    margin-left: 10px;
+   font-weight: 400;
    font-size: 18px;
 }
 
