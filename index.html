@@ -8,65 +8,135 @@
 <body>
 
   <!-- Header -->
-  <header>
-    <h1>My To-Do List</h1>
+  <header id="header">
+    <h1 class="hidden">Main Header</h1>
+    <div id="header-title">
+      <h2>FIP Tasks List</h2>
+      <img src="./images/icon_list.png" alt="Icon List" class="project-logo">
+    </div>
+    <div id="header-text">
+      <h3 class="hidden">Project Description</h3>
+      <p>This is a project kanban, to visualize and list every assignment and deliverable for my Final Integrated Project, for Winter Semester on Fanshawe College.</p>
+    </div>
   </header>
 
   <!-- Main Content -->
   <main>
+    <h1 class="hidden">Main Content</h1>
 
     <!-- To Do List -->
     <section id="todo">
-      <h2>To Do</h2>
-      <ul class="todo">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-        <li>Item 7</li>
-        <li>Item 8</li>
-        <li>Item 9</li>
-        <li>Item 10</li>
+      <h2 id="list-title-todo">To-Do</h2>
+      <div class="list-description">
+        <img src="./images/icon_todo.svg" alt="To-Do Icon" class="list-icon">
+        <h3 id="list-subtitle-todo">Tasks in Backlog</h3>
+      </div>
+      <ul class="todo-list">
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">User Testing</span>
+          <p>Test the current prototype and design with users, to look for possible improvements.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Final Coding Adjustments</span>
+          <p>Check the overall HTML and CSS of the website and search for improvements and adjustments.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Final Prototyping Adjustments</span>
+          <p>Check the overall Design and Prototype of the website and search for improvements and adjustments.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Self Assessment &amp; Reflexion</span>
+          <p>Make a reflexion on personal flaws, skills and knowledge acquired.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Project Report/Documentation</span>
+          <p>Finish to report the project on a final document for Digital Media Theory &amp; Project Management.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Export and Submit</span>
+          <p>Finish the deliverables and submit the final files for grading.</p>
+        </li>
       </ul>
     </section>
 
     <!-- In Progress List -->
     <section id="inprogress">
-      <h2>In Progress</h2>
-      <ul class="inprogress">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-        <li>Item 7</li>
-        <li>Item 8</li>
-        <li>Item 9</li>
-        <li>Item 10</li>
+      <h2 id="list-title-inprogress">In Progress</h2>
+      <div class="list-description">
+        <img src="./images/icon_inprogress.svg" alt="In Progress Icon" class="list-icon">
+        <h3 id="list-subtitle-inprogress">Tasks in Sprint</h3>
+      </div>
+      <ul class="inprogress-list">
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">HTML and CSS for Page #3</span>
+          <p>Finish the HTML and CSS coding for Page #3: Reservations.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">XD Prototyping</span>
+          <p>Finish the higi-fidelity prototyping on Adobe XD.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Wireframe Responsive Adjustments</span>
+          <p>Finish the responsive adjustments on the final wireframes.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Accessibility Assessment</span>
+          <p>Avaliate the overall design for accessibility improvements.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Content Check</span>
+          <p>Check for type errors and possible improvements on text.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Gather Professors Feedback</span>
+          <p>Present the FIP Checkpoint and gather overall feedback from professors.</p>
+        </li>
       </ul>
     </section>
 
     <!-- Done List -->
     <section id="done">
-      <h2>Done</h2>
-      <ul class="done">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-        <li>Item 7</li>
-        <li>Item 8</li>
-        <li>Item 9</li>
-        <li>Item 10</li>
+      <h2 id="list-title-done">Done</h2>
+      <div class="list-description">
+        <img src="./images/icon_done.svg" alt="Done Icon" class="list-icon">
+        <h3 id="list-subtitle-done">Tasks Finished</h3>
+      </div>
+      <ul class="done-list">
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Define Pages and Content</span>
+          <p>Select the 3x pages to be delivered.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">GitHub Repository</span>
+          <p>Create and setup the repository for final submission.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">High Fidelity Wireframing</span>
+          <p>Develop the wireframes for the 3x pages and their responsive versions.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Export Images Assets</span>
+          <p>Select and export images on correct sizes and file types.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Map the Current Website</span>
+          <p>Study and map the client's website for future improvements.</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox"><span class="task-title">Define project schedule</span>
+          <p>Analyze general goals, objectives, process, planning and final deliverables for the project.</p>
+        </li>
       </ul>
     </section>
-    
   </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <h1 class="hidden">Main Footer</h1>
+    <img src="./images/icon_list.png" alt="Icon List" class="project-logo">
+    <h2>2024 &copy; Henrique Gamborgi Menezes</h2>
+    <p>This is an assignment for Homework 3 on Multimedia Authoring (MMED-1054), winter semester, on Fanshawe College Downtown.</p>
+  </footer>
 
 </body>
 </html>
