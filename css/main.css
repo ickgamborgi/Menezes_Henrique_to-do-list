@@ -1,6 +1,17 @@
+/* 
+General Styles 
+*/
+
+.hidden {
+    display:none;
+}
+
 body {
-    background-color: black;
-    color: rgb(238, 238, 169);;
+    background-image: url(/images/bg_2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
  }
@@ -10,63 +21,240 @@ body {
      flex-wrap: wrap;
      justify-content: center;
  }
- 
- header > h1 {
-     text-align: center;
-     padding: 10px;
-     background-color: rgba(255, 255, 255, 0.1);
-     text-transform: uppercase;
+
+ h3 {
+    margin: 0;
  }
+
  
- /* applies to all sections */
+/* 
+Header
+*/
+
+#header {
+    background-color: red;
+    margin-top: 0;
+}
+
+ /* 
+ All Sections 
+ */
+
  section {
-     width: 400px;
-     border: 1px solid rgba(255, 255, 255, 0.5);
+     width: 375px;
+     padding: 15px 15px 15px 15px;
+     margin: 15px 10px;
+     background-image: url(/images/list_background.png);
+     background-color: white;
      border-radius: 15px;
-     padding: 10px 12px 10px 10px;
-     margin: 10px 12px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
  }
- 
- section > h2 {
-     color: rgb(255, 255, 255);
-     margin: 5px 5px;
- }
- 
- section:first-of-type {
-     bordeR: 1px solid red;
-     color: red;
- }
- 
- #todo {
-     background-color: rgba(255, 0, 0, 0.25);
- }
- 
- #inprogress {
-     border: 1px solid yellow;
-     color: yellow;
-     background-color: rgba(255, 255, 0, 0.25);
- }
- 
- #done {
-     background-color: rgba(0, 128, 0, 0.25);
- }
- 
- section:last-of-type {
-     border: 1px solid green;
-     color: green;
- }
+
  
  ul {
-     list-style-type:none;
-     padding: 10px;
+    list-style-type:none;
+    padding: 25px 0px 0px 0px;
+}
+
+ul li {
+    padding: 25px 0 15px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.25);
+}
+
+ul li:last-of-type {
+    border-bottom: 0px;
+}
+
+
+input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input:hover {
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
+.task-title {
+    background-color: rgba(128, 128, 128, 0.25);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.task-title:hover {
+    background-color: rgb(254, 254, 199);
+    margin: 0px;
+}
+
+section ul li p {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 12px;
+    border-left: rgba(0, 0, 0, 0.55) 2px solid;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 10px;
+}
+
+.list-description {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ span::after {
+    content: url(/images/icon_checked.png);
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+ /* 
+ To-Do List
+ */
+
+ #todo {
+    border: solid 5px rgba(8, 0, 98, 0.5);
  }
+
+ #todo ul li span {
+    color: rgb(8, 0, 98);
+ }
+
+#list-title-todo {
+    background-color: rgb(8, 0, 98);
+    color: white;
+    margin: 0px;
+    padding: 5px 15px;
+    font-size: 26px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#list-subtitle-todo {
+    color: rgb(8, 0,98, 0.5);
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+#todo img {
+    width: 25px;
+    margin-left: 15px;
+    margin-top: 10px;
+    animation: edit 4s linear infinite;
+    opacity: 50%;v
+}
+
+@keyframes edit {
+    0%{ transform: rotate(25deg);}
+    15%{ transform: rotate(15deg);}
+    30%{ transform: rotate(0deg);}
+    45%{ transform: rotate(35deg);}
+    60%{ transform: rotate(15deg);}
+    75%{ transform: rotate(25deg);}
+    90%{ transform: rotate(15deg);}
+    100%{ transform: rotate(25deg);}
+	}
+
+/* 
+In Progress List
+*/
+
+#inprogress {
+    border: solid 5px rgba(142, 12, 0, 0.5);
+}
+
+#inprogress ul li span {
+   color: rgb(142, 12, 0);
+}
+
+#list-title-inprogress {
+   background-color: rgb(142, 12, 0);
+   color: white;
+   margin: 0px;
+   padding: 5px 15px;
+   font-size: 26px;
+   text-transform: uppercase;
+   border-radius: 10px;
+}
+
+#list-subtitle-inprogress {
+   color: rgb(142, 12, 0, 0.5);
+   margin-top: 10px;
+   margin-left: 10px;
+   font-size: 18px;
+}
+
+#inprogress img {
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+    opacity: 50%;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 
+Done List
+*/
+
+#done {
+    border: solid 5px rgba(3, 70, 14, 0.5);
+}
+
+#done ul li span {
+   color: rgb(3, 70, 14);
+}
+
+#list-title-done {
+   background-color: rgb(3, 70, 14);
+   color: white;
+   margin: 0px;
+   padding: 5px 15px;
+   font-size: 26px;
+   text-transform: uppercase;
+   border-radius: 10px;
+}
+
+#list-subtitle-done {
+   color: rgb(3, 70, 14,0.5);
+   margin-top: 10px;
+   margin-left: 10px;
+   font-size: 18px;
+}
+
+#done img {
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+    opacity: 50%;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {transform: translateY(-5px);}
+    50% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+
  
- ul li {
-     padding: 6px 0;
- }
- 
- .todo li:hover, .inprogress li:hover, .done li:hover {
-     background-color: rgba(255, 255, 255, 0.15);
-     padding: 10px 10px 10px 10px;
-     font-weight: 800;
- }
