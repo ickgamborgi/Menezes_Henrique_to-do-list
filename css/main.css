@@ -74,10 +74,12 @@ input:hover {
     font-size: 16px;
     font-weight: 700;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .task-title:hover {
-    background-color: rgb(254, 254, 199);
+    background-color: #2d2d7a5d;
+    color: white;
     margin: 0px;
 }
 
