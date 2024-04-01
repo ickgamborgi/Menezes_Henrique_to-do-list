@@ -1,15 +1,21 @@
 # Menezes_Henrique_HW3
-This is a repository for the To-Do List Assignment, Homework 3, on Multimedia Authoring (MMED-1054), winter semester, on Fanshawe College Downtown.
+This is a repository for the To-Do List Assignment, Homework 3, on Multimedia Authoring (MMED-1054), Interactive Media Design program, winter semester, on Fanshawe College Downtown.
+<br>
+<br>
 
 # Installation
 1. Click on the link to the sample repository provided;
 2. On the repo, click on the green button "< > Code";
 3. On the last option, click on "Download zip";
 4. Unzip the folder.
+<br>
+<br>
 
 # Usage
 1. Download the folder on your device;
 2. Open the index.html file on the browser of your choice.
+<br>
+<br>
 
 # Assignment History
 
@@ -42,9 +48,14 @@ Use pull requests and merge as you go.
 - Github repo: readme.md file, master branch, development branch(es)- Name the branches appropriately per feature IE des.yourinitials.artwork, dev.yourinitials.script - Submit the repo link via FOL dropbox
 
  - DO NOT SUBMIT ZIPPED FILES, ONLY THE MASTER BRANCH WILL BE GRADED
+ 
+<br>
+<br>
 
 # Credits
 The credits are due to Henrique Gamborgi Menezes, students of the Interactive Media Design program at Fanshawe College.
+<br>
+<br>
 
 # License
 Copyright (c) 2024 Henrique Gamborgi
