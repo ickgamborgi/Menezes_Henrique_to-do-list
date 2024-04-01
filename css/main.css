@@ -7,7 +7,7 @@ General Styles
 }
 
 body {
-    background-image: url(/images/bg_2.webp);
+    background-image: url(../images/bg_2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
      width: 375px;
      padding: 15px 15px 15px 15px;
      margin: 15px 10px;
-     background-image: url(/images/list_background.png);
+     background-image: url(../images/list_background.png);
      background-color: white;
      border-radius: 15px;
      background-size: cover;
@@ -103,7 +103,7 @@ input[type="checkbox"]:checked + span {
 }
 
 input[type="checkbox"]:checked ~ span::after {
-    content: url(/images/icon_checked.png);
+    content: url(../images/icon_checked.png);
     position: absolute;
     width: 5px;
     height: 5px;
